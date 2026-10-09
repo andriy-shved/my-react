@@ -30,12 +30,51 @@ When the next value depends on the previous one, use the updater form:
 setCount(previousCount => previousCount + 1);
 ```
 
+React calls the updater function with the latest queued state and uses its
+return value as the next state. This is useful when multiple updates may be
+queued, because each updater receives the result of the previous update.
+
+## Updating objects and arrays
+
+Treat state as read-only. To update an object or array, create a new value
+rather than mutating the existing one. A new reference lets React detect that
+the state changed:
+
+```jsx
+setUser(previousUser => ({
+  ...previousUser,
+  name: "Ada",
+}));
+
+setItems(previousItems => [...previousItems, newItem]);
+```
+
+In the object example, the existing properties are copied and then `name` is
+set to `"Ada"` (replacing the old value if present). The array example copies
+the current items and appends `newItem`. Avoid changing an existing object and
+passing the same reference back to the setter.
+
+Object spread makes a **shallow copy**: nested objects are still shared
+references. To update a nested property, copy each object along the path:
+
+```jsx
+setUser(previousUser => ({
+  ...previousUser,
+  address: {
+    ...previousUser.address,
+    city: "London",
+  },
+}));
+```
+
 ## How React knows what to render again
 
 React associates each Hook call with the component currently rendering it.
 The setter returned by `useState` is connected to that particular state.
 Calling it tells React which state to update, and React schedules the owning
 component to render again. React may also render affected descendants.
+React compares the next state with the current state using `Object.is`; when
+they are equal, it can skip rendering the component's children.
 
 Hook calls must happen in the same order on every render. This is why Hooks
 must be called at the top level of a function component or custom Hook—not
@@ -66,4 +105,5 @@ The button displays the current state. Clicking it calls the setter, and React
 renders `Counter` again so the UI reflects the new value.
 
 For component definitions and how React renders them, see
-[Function components](components.md).
+[Function components](components.md). For syntax terms used in these examples,
+see the [React terminology glossary](../terminology.md).

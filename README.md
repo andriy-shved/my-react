@@ -10,6 +10,7 @@ React, with a focus on lessons from a team's migration to React.
 ## React fundamentals
 
 - [React fundamentals index](docs/react-fundamentals/README.md)
+- [React terminology glossary](docs/terminology.md)
 
 ## Learning checklists
 

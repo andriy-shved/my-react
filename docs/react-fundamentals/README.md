@@ -7,3 +7,6 @@ These notes cover the building blocks of React function components:
   importing, and rendering components; passing props.
 - [State with `useState`](use-state.md) — state values, setter functions,
   destructuring, and re-renders.
+
+For JavaScript and React terms used across these topics, see the
+[React terminology glossary](../terminology.md).
