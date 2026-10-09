@@ -9,9 +9,7 @@ React, with a focus on lessons from a team's migration to React.
 
 ## React fundamentals
 
-- [React fundamentals index](docs/react-fundamentals/README.md)
+- [React fundamentals and learning checklist](docs/react-fundamentals/README.md)
+- [Props](docs/react-fundamentals/props.md) — passing data and callbacks,
+  default values, and reusable component design.
 - [React terminology glossary](docs/terminology.md)
-
-## Learning checklists
-
-- [React function components](docs/react-function-components-checklist.md)

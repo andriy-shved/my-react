@@ -19,25 +19,8 @@ rendering; normally, do not call it directly as `Greeting()`.
 ## Props
 
 Props are inputs passed to a component. They let you reuse a component with
-different data:
-
-```jsx
-function Greeting({ name }) {
-  return <h1>Hello, {name}!</h1>;
-}
-
-function App() {
-  return (
-    <>
-      <Greeting name="Maya" />
-      <Greeting name="Leo" />
-    </>
-  );
-}
-```
-
-Treat props as read-only. Pass a callback prop when a child needs to ask its
-parent to perform an action.
+different data; treat them as read-only. See [Props](props.md) for passing
+data and callbacks, setting defaults, and designing reusable component APIs.
 
 ## Exporting and importing
 
@@ -87,5 +70,9 @@ The flow is: export a component, import it where needed, include it in JSX,
 then render the top-level component into the page. A framework or project
 setup may provide this entry point and mounting step for you.
 
-For JSX syntax details, see [JSX basics](jsx.md). For state that changes over
-time, see [State with `useState`](use-state.md).
+## See also
+
+- [JSX basics](jsx.md) — JSX syntax.
+- [Props](props.md) — component inputs and reusable APIs.
+- [State with `useState`](use-state.md) — state that changes over time.
+- [Back to React fundamentals](README.md)

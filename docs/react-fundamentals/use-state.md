@@ -104,6 +104,10 @@ function Counter() {
 The button displays the current state. Clicking it calls the setter, and React
 renders `Counter` again so the UI reflects the new value.
 
-For component definitions and how React renders them, see
-[Function components](components.md). For syntax terms used in these examples,
-see the [React terminology glossary](../terminology.md).
+## See also
+
+- [Function components](components.md) — component definitions and rendering.
+- [Props](props.md) — passing data to components.
+- [React terminology glossary](../terminology.md) — syntax terms used in
+  these examples.
+- [Back to React fundamentals](README.md)

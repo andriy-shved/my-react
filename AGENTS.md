@@ -24,8 +24,13 @@ work—not as an application project by default.
   migration, and connect related topics where useful.
 - When adding or updating knowledge, explain important reasoning and preserve
   useful examples, sources, and version context.
-- Every new Markdown knowledge file must be linked from `README.md`. Keep the
-  README organized as the wiki index, grouping links under clear topic
-  headings and updating the index in the same change that adds a file.
+- Every Markdown page in `docs/react-fundamentals/` must be linked from
+  `docs/react-fundamentals/README.md`. When adding a page there, update this
+  local index in the same change. Each topic page in that folder must end with
+  a `See also` section formatted as a bulleted list, including a link back to
+  the local `README.md` index.
+- Every new Markdown knowledge file must also be linked from the top-level
+  `README.md`. Keep it organized as the wiki index, grouping links under clear
+  topic headings and updating it in the same change that adds a file.
 - Keep persistent project context and knowledge artifacts inside this
   repository; do not rely on or create external memory for this project.

@@ -39,5 +39,8 @@ When rendering a list with `.map()`, give each item a stable `key` so React
 can match items between renders. A stable ID is generally preferable to an
 array index, especially when items can be reordered, added, or removed.
 
-For how JSX is used to define and compose components, see
-[Function components](components.md).
+## See also
+
+- [Function components](components.md) — defining and composing components
+  with JSX.
+- [Back to React fundamentals](README.md)
