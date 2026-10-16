@@ -7,6 +7,8 @@ These notes cover the building blocks of React function components:
   importing, and rendering components.
 - [Props](props.md) — passing data and callbacks, setting defaults, and
   designing reusable component APIs.
+- [Events](events.md) — handling user interactions and passing event
+  handlers between components.
 - [State with `useState`](use-state.md) — state values, setter functions,
   destructuring, and re-renders.
 
@@ -21,7 +23,7 @@ Each item starts unchecked; check it off as you work through the topic.
 - [x] **JSX and component basics** — defining, exporting, importing, and rendering function components.
 - [x] **Props** — passing data and callbacks, default values, and keeping components reusable.
 - [x] **State** — using `useState`, updating state immutably, and understanding when updates trigger a re-render.
-- [ ] **Events** — handling user interactions and passing event handlers between components.
+- [x] **Events** — handling user interactions and passing event handlers between components.
 - [ ] **Conditional rendering** — showing different UI based on props or state.
 - [ ] **Lists and keys** — rendering collections and choosing stable keys.
 - [ ] **Component composition** — building UIs from smaller components and using `children`.

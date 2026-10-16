@@ -12,4 +12,6 @@ React, with a focus on lessons from a team's migration to React.
 - [React fundamentals and learning checklist](docs/react-fundamentals/README.md)
 - [Props](docs/react-fundamentals/props.md) — passing data and callbacks,
   default values, and reusable component design.
+- [Events](docs/react-fundamentals/events.md) — handling interactions and
+  passing event handlers between components.
 - [React terminology glossary](docs/terminology.md)
