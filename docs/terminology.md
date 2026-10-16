@@ -4,6 +4,14 @@ This glossary collects JavaScript and React terms used across the wiki.
 
 ## JavaScript syntax
 
+- **Logical AND operator (`&&`)** — evaluates the left operand first. If it is
+  falsy, evaluation short-circuits and returns that operand; otherwise it
+  evaluates and returns the right operand. In JSX, this is commonly used for
+  conditional rendering, as in `{isOpen && <Details />}`. Because it returns
+  an operand rather than always a boolean, `{count && <Badge />}` renders `0`
+  when `count` is zero; use a boolean condition such as
+  `{count > 0 && <Badge />}` instead. See
+  [Conditional rendering](react-fundamentals/conditional-rendering.md).
 - **Arrow-function syntax** — `parameter => expression` is a concise way to
   write a function. For example,
   `previousCount => previousCount + 1` is equivalent to

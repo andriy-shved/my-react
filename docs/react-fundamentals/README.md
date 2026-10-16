@@ -11,6 +11,8 @@ These notes cover the building blocks of React function components:
   handlers between components.
 - [State with `useState`](use-state.md) — state values, setter functions,
   destructuring, and re-renders.
+- [Conditional rendering](conditional-rendering.md) — showing different UI
+  based on props or state.
 
 For JavaScript and React terms used across these topics, see the
 [React terminology glossary](../terminology.md).
@@ -24,7 +26,7 @@ Each item starts unchecked; check it off as you work through the topic.
 - [x] **Props** — passing data and callbacks, default values, and keeping components reusable.
 - [x] **State** — using `useState`, updating state immutably, and understanding when updates trigger a re-render.
 - [x] **Events** — handling user interactions and passing event handlers between components.
-- [ ] **Conditional rendering** — showing different UI based on props or state.
+- [x] **Conditional rendering** — showing different UI based on props or state.
 - [ ] **Lists and keys** — rendering collections and choosing stable keys.
 - [ ] **Component composition** — building UIs from smaller components and using `children`.
 - [ ] **Sharing state** — lifting state up and deciding where state should live.

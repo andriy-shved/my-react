@@ -14,4 +14,6 @@ React, with a focus on lessons from a team's migration to React.
   default values, and reusable component design.
 - [Events](docs/react-fundamentals/events.md) — handling interactions and
   passing event handlers between components.
+- [Conditional rendering](docs/react-fundamentals/conditional-rendering.md) —
+  showing different UI based on props or state.
 - [React terminology glossary](docs/terminology.md)
